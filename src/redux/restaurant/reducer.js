@@ -1,8 +1,8 @@
 import { fromJS } from 'immutable';
 import {
-  LOAD_RESTAURANTS,
-  LOAD_RESTAURANTS_SUCCESS,
-  LOAD_RESTAURANTS_ERROR,
+  LOAD_NEARBY_RESTAURANTS,
+  LOAD_NEARBY_RESTAURANTS_SUCCESS,
+  LOAD_NEARBY_RESTAURANTS_ERROR,
   LOAD_RESTAURANT,
   LOAD_RESTAURANT_SUCCESS,
   LOAD_RESTAURANT_ERROR,
@@ -17,11 +17,11 @@ const initialState = fromJS({
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case LOAD_RESTAURANTS:
+    case LOAD_NEARBY_RESTAURANTS:
       return state.set('loading', true);
-    case LOAD_RESTAURANTS_SUCCESS:
+    case LOAD_NEARBY_RESTAURANTS_SUCCESS:
       return state.set('loading', false).set('data', fromJS(action.payload));
-    case LOAD_RESTAURANTS_ERROR:
+    case LOAD_NEARBY_RESTAURANTS_ERROR:
       return state.set('loading', false).set('error', action.error);
     case LOAD_RESTAURANT:
       return state.set('loading', true);

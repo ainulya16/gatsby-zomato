@@ -4,13 +4,13 @@ const selectRestaurant = state => state.restaurant;
 
 export const Restaurants = () => createSelector(
     selectRestaurant,
-    state => state.get('restaurants'),
+    stateRestaurant => stateRestaurant.get('data'),
 );
 export const Restaurant = () => createSelector(
     selectRestaurant,
-    state => state.get('restaurants'),
+    stateRestaurant => stateRestaurant.get('detail'),
 );
 export const Loading = () => createSelector(
     selectRestaurant,
-    state => state.get('loading'),
+    stateRestaurant => stateRestaurant.get('loading'),
 );
