@@ -28,9 +28,9 @@ export function* getNearbyWatcher() {
   yield takeLatest(LOAD_NEARBY_RESTAURANTS, getNearby);
 }
 
-export function* getRestaurantDetail() {
+export function* getRestaurantDetail({ id }) {
   try {
-    const payload = yield call(restaurant);
+    const payload = yield call(restaurant, id);
     yield put(restaurantSuccess(payload));
   } catch (error) {
     yield put(restaurantFailed(error));

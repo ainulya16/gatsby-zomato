@@ -10,7 +10,8 @@ import {
 
 const initialState = fromJS({
   loading: false,
-  error: false,
+  loading_detail: false,
+  error: null,
   data: [],
   detail: {},
 });
@@ -20,15 +21,15 @@ export default (state = initialState, action) => {
     case LOAD_NEARBY_RESTAURANTS:
       return state.set('loading', true);
     case LOAD_NEARBY_RESTAURANTS_SUCCESS:
-      return state.set('loading', false).set('data', fromJS(action.payload));
+      return state.set('loading', false).set('data', fromJS(action.payload)).set('error', null);
     case LOAD_NEARBY_RESTAURANTS_ERROR:
       return state.set('loading', false).set('error', action.error);
     case LOAD_RESTAURANT:
-      return state.set('loading', true);
+      return state.set('loading_detail', true);
     case LOAD_RESTAURANT_SUCCESS:
-      return state.set('loading', false).set('detail', fromJS(action.payload));
+      return state.set('loading_detail', false).set('detail', fromJS(action.payload)).set('error', null);
     case LOAD_RESTAURANT_ERROR:
-      return state.set('loading', false).set('error', action.error);
+      return state.set('loading_detail', false).set('error', action.error);
     default:
       return state;
   }

@@ -22,8 +22,12 @@ export const nearby = async ({ lat, lon }) => {
 
 export const categories = () => api.get('categories');
 
-export const restaurant = (id) => {
+export const restaurant = async (id) => {
   const params = { res_id: id };
-
-  return api.get('restaurant', { params });
+  try {
+    const payload = await api.get('restaurant', { params });
+    return payload.data;
+  } catch (error) {
+    return error;
+  }
 };

@@ -22,8 +22,9 @@ export const restaurantsNearbyFailed = error => ({
   error,
 });
 
-export const restaurant = () => ({
+export const restaurant = id => ({
   type: LOAD_RESTAURANT,
+  id,
 });
 
 export const restaurantSuccess = payload => ({
