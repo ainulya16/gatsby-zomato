@@ -1,0 +1,10 @@
+{
+  "presets": [
+      ["babel-preset-gatsby", { "targets": { "node": 6 } }],
+  ],
+  "plugins": [
+      ["babel-plugin-styled-components", { "ssr": true, "displayName": false }],
+      ["import", { "libraryName": "antd", "style": "css" }],
+      ["lodash"],
+  ],
+}
