@@ -80,5 +80,5 @@
     "lint": "eslint \"**/*.js\" --fix",
     "e2e": "npm-run-all --parallel --race serve test",
     "gen-chart": "pipeline-utils gen-chart -n $npm_package_name -d $npm_package_description -v $npm_package_version"
-  },
+  }
 }

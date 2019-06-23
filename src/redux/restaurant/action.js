@@ -1,10 +1,10 @@
 import {
-  LOAD_RESTAURANT,
+  LOAD_RESTAURANTS,
   LOAD_RESTAURANTS_SUCCESS,
   LOAD_RESTAURANTS_ERROR,
   LOAD_RESTAURANT,
   LOAD_RESTAURANT_SUCCESS,
-  LOAD_RESTAURANT_ERROR
+  LOAD_RESTAURANT_ERROR,
 } from './constant';
 
 export const restaurants = () => ({
@@ -18,7 +18,7 @@ export const restaurantsSuccess = payload => ({
 
 export const restaurantsFailed = error => ({
   type: LOAD_RESTAURANTS_ERROR,
-  error
+  error,
 });
 
 export const restaurant = () => ({
@@ -32,6 +32,5 @@ export const restaurantSuccess = payload => ({
 
 export const restaurantFailed = error => ({
   type: LOAD_RESTAURANT_ERROR,
-  error
+  error,
 });
-

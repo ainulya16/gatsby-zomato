@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
- string, shape, objectOf, any, oneOfType, node, arrayOf,
+ string, oneOfType, node, arrayOf,
 } from 'prop-types';
 
 const CardBase = styled.div`
@@ -26,7 +26,7 @@ const P = styled.p`
 `;
 
 const Card = ({
- title, description, icon, children, ...attr
+ title, description, children, ...attr
 }) => {
   return (
     <CardBase className="text-center" {...attr}>
@@ -39,14 +39,12 @@ const Card = ({
 
 Card.propTypes = {
   title: string,
-  icon: shape({ name: string, size: string, style: objectOf(any) }),
   description: string,
   children: oneOfType([node, arrayOf(node)]),
 };
 Card.defaultProps = {
   title: '',
   description: '',
-  icon: {},
   children: null,
 };
 
