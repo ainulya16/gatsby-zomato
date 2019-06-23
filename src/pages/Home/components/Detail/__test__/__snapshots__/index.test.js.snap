@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Detail renders Loading 1`] = `
+<div
+  className="ant-skeleton"
+>
+  <div
+    className="ant-skeleton-content"
+  >
+    <h3
+      className="ant-skeleton-title"
+      style={
+        Object {
+          "width": "38%",
+        }
+      }
+    />
+    <ul
+      className="ant-skeleton-paragraph"
+    >
+      <li
+        style={
+          Object {
+            "width": undefined,
+          }
+        }
+      />
+      <li
+        style={
+          Object {
+            "width": undefined,
+          }
+        }
+      />
+      <li
+        style={
+          Object {
+            "width": "61%",
+          }
+        }
+      />
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Component: Detail renders image and text 1`] = `
+<div>
+  <img
+    alt="Otto Enoteca & Pizzeria"
+    src="https://d.zmtcdn.com/data/pictures/chains/8/16774318/a54deb9e4dbb79dd7c8091b30c642077_featured_v2.png"
+    width="100%"
+  />
+  <h2>
+    Otto Enoteca & Pizzeria
+  </h2>
+  <h4>
+    Cafe
+  </h4>
+  <b>
+    1 5th Avenue, New York, NY 10003, New York City
+  </b>
+</div>
+`;

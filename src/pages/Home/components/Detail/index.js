@@ -1,10 +1,9 @@
 import React from 'react';
 import { bool, objectOf, any } from 'prop-types';
 import {
-Skeleton, Typography,
+Skeleton,
 } from 'antd';
 
-const { Title } = Typography;
 
 const Detail = (props) => {
   const { loading, data } = props;
@@ -14,8 +13,8 @@ const Detail = (props) => {
   return (
     <div>
       <img alt={data.name} src={data.featured_image} width="100%" />
-        <Title level={2}>{data.name}</Title>
-        <Title level={4}>{data.cuisines}</Title>
+        <h2>{data.name}</h2>
+        <h4>{data.cuisines}</h4>
         <b>{`${data.location.address}, ${data.location.city}`}</b>
 
     </div>

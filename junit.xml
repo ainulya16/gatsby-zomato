@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="0" time="10.708">
-  <testsuite name="Component: Layout" errors="0" failures="0" skipped="0" timestamp="2019-06-23T15:24:38" time="2.889" tests="2">
-    <testcase classname="Component: Layout should be exist" name="Component: Layout should be exist" time="0.012">
+<testsuites name="jest tests" tests="9" failures="0" time="8.718">
+  <testsuite name="Component: Layout" errors="0" failures="0" skipped="0" timestamp="2019-06-23T15:34:06" time="2.963" tests="2">
+    <testcase classname="Component: Layout should be exist" name="Component: Layout should be exist" time="0.027">
     </testcase>
-    <testcase classname="Component: Layout renders Layout default styles" name="Component: Layout renders Layout default styles" time="0.034">
-    </testcase>
-  </testsuite>
-  <testsuite name="Component: Layout" errors="0" failures="0" skipped="0" timestamp="2019-06-23T15:24:38" time="2.926" tests="2">
-    <testcase classname="Component: Layout should be exist" name="Component: Layout should be exist" time="0.013">
-    </testcase>
-    <testcase classname="Component: Layout renders Section default styles" name="Component: Layout renders Section default styles" time="0.047">
+    <testcase classname="Component: Layout renders Layout default styles" name="Component: Layout renders Layout default styles" time="0.086">
     </testcase>
   </testsuite>
-  <testsuite name="Seo Component" errors="0" failures="0" skipped="0" timestamp="2019-06-23T15:24:38" time="3.19" tests="2">
-    <testcase classname="Seo Component should have Helmet&quot;" name="Seo Component should have Helmet&quot;" time="0.054">
+  <testsuite name="Component: Detail" errors="0" failures="0" skipped="0" timestamp="2019-06-23T15:34:06" time="3.019" tests="3">
+    <testcase classname="Component: Detail should be exist" name="Component: Detail should be exist" time="0.034">
     </testcase>
-    <testcase classname="Seo Component should correctly append keyword" name="Seo Component should correctly append keyword" time="0.01">
+    <testcase classname="Component: Detail renders Loading" name="Component: Detail renders Loading" time="0.075">
+    </testcase>
+    <testcase classname="Component: Detail renders image and text" name="Component: Detail renders image and text" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="Seo Component" errors="0" failures="0" skipped="0" timestamp="2019-06-23T15:34:06" time="3.165" tests="2">
+    <testcase classname="Seo Component should have Helmet&quot;" name="Seo Component should have Helmet&quot;" time="0.276">
+    </testcase>
+    <testcase classname="Seo Component should correctly append keyword" name="Seo Component should correctly append keyword" time="0.033">
+    </testcase>
+  </testsuite>
+  <testsuite name="Component: Layout" errors="0" failures="0" skipped="0" timestamp="2019-06-23T15:34:09" time="0.696" tests="2">
+    <testcase classname="Component: Layout should be exist" name="Component: Layout should be exist" time="0.005">
+    </testcase>
+    <testcase classname="Component: Layout renders Section default styles" name="Component: Layout renders Section default styles" time="0.01">
     </testcase>
   </testsuite>
 </testsuites>
